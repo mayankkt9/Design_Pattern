@@ -1,0 +1,59 @@
+
+GOF Builder is Different than Joshua Bloch Builder Pattern.
+Joshua Bloch's Builder pattern is when you have lots of varying constructor parameters.
+
+
+Here we will talk about GOF Builder Pattern.
+
+Student
+	- Name
+	- ID 
+	- Degree
+We have a use here - Lets say we want to have a system where we donot want to allow creation of Student object if he/she donot have name and an ID.
+Or to put it in a generic way - You need a builder where you only returns the actual product object if it accepts all the business logic or rules. And should not allow creation of object directly.
+
+That someone who protects this use case of allowing to create an object only when you have required members is Builder for that object
+for Student we have StudentBuilder
+
+Another use case is when object cannot be constructed on one call
+Or you have one build process that should build many different kinds of products.
+
+Some advantages 
+
+The Scope: A ConcreteBuilder constrains all components it needs in the same scope. So the client of the Builder don't see anything about/related to Product.
+
+Less Parameters in Builder: Since all the methods inside the ConcreteBuilder can share those variables, the methods of ConcreteBuilder should be easier to read and write. (From the book Clean Code, the more parameters a method has, the worse.)
+
+Dependency Inversion Principle: The Builder interface plays a key role in the builder pattern. Why? Because now both Director(the logic) and ConcreteBuilder(the implementation) follow the same rule to build a thing.
+
+
+Here are key consequences of the Builder pattern:
+
+1. It lets you vary a product's internal representation. The Builder object
+provides the director with an abstract interface for constructing the
+product. The interface lets the builder hide the representation and internal
+structure of the product. It also hides how the product gets assembled.
+Because the product is constructed through an abstract interface, all you
+have to do to change the product's internal representation is define a new
+kind of builder.
+
+2. It isolates code for construction and representation. The Builder pattern
+improves modularity by encapsulating the way a complex object is constructed
+and represented. Clients needn't know anything about the classes that define
+the product's internal structure; such classes don't appear in Builder's
+interface.
+
+Each ConcreteBuilder contains all the code to create and assemble a
+particular kind of product. The code is written once; then different
+Directors can reuse it to build Product variants from the same set of parts.
+In the earlier RTF example, we could define a reader for a format other
+than RTF, say, an SGMLReader, and use the same TextConverters to generate
+ASCIIText, TeXText, and TextWidget renditions of SGML documents.
+
+3. It gives you finer control over the construction process. Unlike creational
+patterns that construct products in one shot, the Builder pattern constructs
+the product step by step under the director's control. Only when the product
+is finished does the director retrieve it from the builder. Hence the Builder
+interface reflects the process of constructing the product more than other
+creational patterns. This gives you finer control over the construction
+process and consequently the internal structure of the resulting product.
