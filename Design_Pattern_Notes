@@ -1,0 +1,27 @@
+
+Abstract Factory Design Pattern
+	- Provides an interface to create families of related or dependent objects without specifying their concrete classes.
+	- Example - You want to make UI control for Mac, Windows and Ubuntu. In that UI control you only have Alerts and Button, each platform has different Alerts and Button.
+
+AbstractFactory macFactory = new MacFactory();
+macFactory.getAlert();
+macFactory.getButton();
+These both would give you mac kind of components.
+
+You have Alert and Button abstract class, its concrete class specifies different kind of Alert and Button you have.
+When you initialize or create an instance macFactory you are sure that all the product component that the factory would create will adhere to MAC platform.
+Thats what it means to create families of related or dependent objects.
+When we are create these Alert and Button we are not specifying their concrete classes.
+
+
+The most important fact you will use Abstract Factory is when it does not make sense to make a concrete factory with different combination of product
+Example - you have 
+ProductA-Theme (Light,Dark)
+ProductB-TextColor (White,Black)
+
+When you create a concreteFactory you will createThemeDark and createTextColorWhite togeather and that makes sense and same goes for ou create a concreteFactory you will createThemeLight and createTextColorBlack togeather.
+It would not make sense to create theme light and text color light. - So when there is a use case to build family of dependent or related objects and it does not make sense to make concrete factory with different combination of products.
+
+
+Main difference between Abstract Factory Pattern and Factory Pattern -
+Abstract Factory pattern returns multiple products of related items logically. Basically we can group different kinds of products in a specific concrete factory such that group of concretion make sense logically
