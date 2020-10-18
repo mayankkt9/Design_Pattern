@@ -1,0 +1,28 @@
+Design Pattern - Decorator
+
+Extends the functionality of a certain object at runtime.
+Example - Swing GUI
+
+
+Decorator has a component and is a component
+Decorator pattern attaches additional responsibility to an object dynamically.
+Provide a flexible alternative to subclassing for extending functionalilty.
+
+
+
+Problem Statement - You have types of coffies - espresso | Decaf | etc, then you have condiments you can put in these coffies like soy milk | chocolate | espresso shot | caramel | whipped milk | etc.
+
+- Class explosion (When approaching all possible coffee possible create all possible mixture class)
+- Condition explosion (When take parent class and taking condiments as boolean)
+- Decorator Pattern
+
+Decorator Approach 
+
+Concrete Component act as a base case for recursion.
+
+When decorator adds significantly different behaviour to another object you should use decorator pattern. Like InputStream -> FileInputStream -> BufferedInputStream
+In case of coffies example - all decorator behaviour will simply add cost down the child from the parent. So we can even Iterate all the condiments and calculate the cost.
+
+
+You use decorator when you want to wrap something to another object.
+Good example would be you want to make pizza and dynamically add or wrap different toppping to that pizza

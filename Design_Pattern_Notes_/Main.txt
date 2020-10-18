@@ -8,6 +8,17 @@ Design Pattern Completed
 	- Builder Design Pattern
 
 - Structural
-
+	- Decorator Pattern
 
 - Behavioral
+
+
+"Structural patterns are concerned with how classes and objects are composed to form larger structures. "
+"Behavior patterns are concerted with algorithms and the assignment of responsibilities between objects. Behavioral patterns describe not just the patterns of objects or classes but also the patterns of communication between them."
+
+Principle
+
+
+SRP - Single Responsibility Principle
+Open Close Principle
+Interface Segration Principle - Subclass should not be forced to depend on methods that it doesnot use - so it says its better to have multiple smaller interfaces than one single large one
