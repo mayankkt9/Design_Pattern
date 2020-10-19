@@ -1,0 +1,33 @@
+Bridge
+
+Decouple an abstraction from its implementation so that two can vary independently.
+
+We are basically pairing one concrete abstraction to one concrete implementor
+So if we have 3 concrete abstraction and 3 concrete implementor, we can pair them in 9 different ways.
+So we did not created 9 different classes for that but used composition of concrete abstraction and concrete implementor.
+
+
+Problem Statement - 
+You have 4 kinds of Views for  GUI -> LongView | ShortView | ScrollableView | PopUpView
+You have 4 kinds of resources  -> Artist | Album | book | Author
+
+So if you want all the mix and match to show these resources in different GUI you would need 16 classes.
+We would have classes like 
+LongFormArtistResource
+LongFormAlbumResource
+LongFormBookResource and so on . . .
+There would be lot of duplicate code too
+
+
+
+In Composite design pattenr you need 4 + 4 classes.
+
+
+
+
+So in composite you can have abstract view and 4 concrete views
+and abstract resources and 4 concrete resources.
+
+
+Some of the concrete views dont want all of the methods that resources define. Any concrete view they might only be intrested in one or two of all of the method defined in abstract view
+When view is displaying the resources it delegates to the specific resource it needs information from and then display that particular resource
