@@ -19,3 +19,4 @@ In decorator we have refrences from decorater 2 to decorator 1 from decorator 1 
 
 In Decorator we basically add additional behavior to an existing object.
 In Composite we actually use if we have something to model as a tree strucutre.
+

@@ -1,0 +1,11 @@
+Proxy
+
+Provides a Surrogate or placeholder for another object to control access to it.
+Introducing another way of in direction.
+We are solving all type of problem that are access related 
+Proxy 
+	- Remote Proxy - When object is present in different server or elsewhere. So proxy is repsonsible to interact with remote resourse on your behalf.
+	- Virtual Proxy - Controls access to a resource that is expensive to create. Like caching. Lazy evaluation
+	- Protection Proxy - Access management, whether a user have write to access that resource.
+
+Adds a behavior with an intent to access control

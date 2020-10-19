@@ -13,9 +13,12 @@ Design Pattern Completed
 	- Bridge Pattern
 	- Adapter Pattern
 	- Facade Pattern
+	- Proxy Pattern
 
 - Behavioral
-
+	- Chain Of Responsibility
+	- Observer Pattern
+	- Strategy Pattern
 
 "Structural patterns are concerned with how classes and objects are composed to form larger structures. "
 "Behavior patterns are concerted with algorithms and the assignment of responsibilities between objects. Behavioral patterns describe not just the patterns of objects or classes but also the patterns of communication between them."
