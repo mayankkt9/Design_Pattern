@@ -11,6 +11,8 @@ Design Pattern Completed
 	- Decorator Pattern
 	- Composite Pattern
 	- Bridge Pattern
+	- Adapter Pattern
+	- Facade Pattern
 
 - Behavioral
 

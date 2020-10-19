@@ -1,0 +1,9 @@
+Facade
+Provides a unified interface to a set of interfaces in a subsystem, facade defines the higher level interface that makes the subsystem easier to use 
+
+Law of demeter or Principle of least knowledge
+Object should only talk to its friends and not to its friends of friends because of coupling.
+Coupling make changes difficult to happen. So we are allowed a.b but not a.b.c
+
+
+Not coding as it is very easy to visualize.
