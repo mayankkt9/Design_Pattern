@@ -1,0 +1,29 @@
+Composite Design Pattern - composes object into tree structure to represent part whole hierarchy. Composite lets client treat individual object and composition of object uniformly.
+
+Use the Composite pattern when
+
+you want to represent part-whole hierarchies of objects.
+you want clients to be able to ignore the difference between compositions of objects and individual objects. Clients will treat all objects in the composite structure uniformly.
+Creates a tree structure - n ary, such that when you want to make some operation done all its child too does that operation and gets you the value.
+
+
+There are two kinds of nodes in the tree - leaf nodes and non leaf nodes.
+All non leaf nodes are called composite nodes.
+
+Here we replace conditional with polymorphism. 
+
+Lets say -> extract the last name is called from root. All its child class return last name. 
+The leaf node does not write some conditions to stop itself going to its non existing child nodes. They just have different getLastName function as compared to all non leaf nodes. 
+All non leaf nodes call there child nodes and all leaf nodes just returns or prints the last names
+So we replace conditional with polymorphism. 
+
+
+If you are making some structure try making it immutable
+
+Real world example - You have html - you have div inside div, basically a tree structure. In React you have component inside many componets and inside many components and so on. If you click refresh all components refresh from root to leaf.
+
+Many Real life examples comes in - menu or todo list 
+
+
+
+I personally think - it is quite simple structural pattern where you want see an hierarchy of object as an individual object and want to perform operation on that individual object which internally and recursively works on all its child objects.

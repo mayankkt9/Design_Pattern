@@ -3,12 +3,13 @@
 Design Pattern Completed 
 
 - Creational
-	- Abstract Factory
-	- Singleton
+	- Abstract Factory Pattern
+	- Singleton Pattern
 	- Builder Design Pattern
 
 - Structural
 	- Decorator Pattern
+	- Composite Pattern
 
 - Behavioral
 
