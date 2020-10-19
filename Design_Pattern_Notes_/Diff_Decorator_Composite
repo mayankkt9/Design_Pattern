@@ -1,0 +1,21 @@
+Difference b/w Decorator and Composite
+
+
+Main difference is based on there usage 
+
+Decorator - Used to extend the functionality at runtime without changing the code of the object which is getting extended. 
+
+Composite - When you have hierarichal data and you want to perform operation on them seeing the hierarichal strucutre in a common way. Lets client treat object and composition of object uniformly
+Here we replace condition with polymorphism
+
+
+Key differences
+ 
+Composite - Component can have refrences to multiple component object that is why tree structure is formed.
+Decorator - Here we only wrap one object on top of another object. Linklist kind of strucutre is formed here.
+
+In composite pattern if we notice we have refrences from composite to another composite and then to leaf from up to down.
+In decorator we have refrences from decorater 2 to decorator 1 from decorator 1 to base component. and we call decorator 2 method that wraps decorator 1 and base component.
+
+In Decorator we basically add additional behavior to an existing object.
+In Composite we actually use if we have something to model as a tree strucutre.

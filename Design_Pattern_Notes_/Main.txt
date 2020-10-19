@@ -20,6 +20,13 @@ Design Pattern Completed
 Principle
 
 
+SOLID
+ - SRP
+ - OpenClosed 
+ - Liskov's Substitution
+ - Interface Segration
+ - Dependency Inversion 
+ 
 SRP - Single Responsibility Principle
 Open Close Principle
 Interface Segration Principle - Subclass should not be forced to depend on methods that it doesnot use - so it says its better to have multiple smaller interfaces than one single large one
