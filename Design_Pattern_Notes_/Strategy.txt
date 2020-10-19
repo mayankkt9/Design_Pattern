@@ -1,0 +1,3 @@
+Strategy Pattern
+
+Defines a family of algorithm encapsulates each one and makes them interchangable, 
