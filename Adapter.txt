@@ -1,0 +1,15 @@
+Adapter 
+
+Adapter makes interfact compatible to another interface
+Facade hides complex logic and provides you with interface
+Proxy intercepts the call and thus control access the underlying object. Usecase - caching, security etc.
+Decorator adds behaviour to object it is decorating.
+
+More use cases of Adapter
+
+If in future you want to change the adaptee you can easily change that by changing the wrapper code around it.
+So Client actually calls adaptee but adapter sits between it.
+Adapter code can change in future to delegate request to new adaptee and keeping the underlying code same like whole application still calls adapter method.
+
+
+This one is the simplest design pattern which works as a wrapper and wrap a particular object you want to wrap for any reason. 
