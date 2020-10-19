@@ -10,5 +10,11 @@
 	- Decorator Pattern
 	- Composite Pattern
 	- Bridge Pattern
+	- Adapter Pattern
+	- Facade Pattern
+	- Proxy Pattern
 
 - Behavioral
+	- Chain Of Responsibility
+	- Observer Pattern
+	- Strategy Pattern
